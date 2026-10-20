@@ -1,11 +1,11 @@
 body {
-    background-color: #f0f4f8;
+    background-color: #f0ebeb;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 
 h1 {
-    color: #2563eb;
+    color: #eee5e7;
 }
 
 p {
@@ -13,7 +13,7 @@ p {
 }
 
 button {
-    background-color: #2563eb;
+    background-color: #f3eced;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -22,4 +22,12 @@ button {
 }
 h1 {
     color: #2563eb;
+}
+
+h2 {
+    color: #eb252c;
+}
+
+title {
+    color: #dc0f19;
 }
