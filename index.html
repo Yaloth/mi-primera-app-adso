@@ -1,44 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name ="viewport" content="width=device-width, inicial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="viewport"content="width=device-width,initial-scale=1.0">
+   <title>Tarjeta de presentación | Zharik De La Hoz</title>
+   <link rel="stylesheet" href="styles.css">
 
-    <title>Tarjeta de presentación | Zharik De La Hoz</title>
-
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+</body>
+   <main class="tarjeta"> 
 
-    <main class="tarjeta">
- 
-   
-       <header class="encabezado">
-          <div class="icono">&lt;/&gt;</div>
+     <header class="encabezado"> 
+        <div class="iconico" aria-hidden="true"></div>
+        <h1>Zharik De La Hoz</h1>
+        <p class="profesión">Tecnico en Sistemas</p>
+        <p class="ocupación">Estudiante de Programación</p>
+     </header>
 
-           <h1>Zharik Yaloth De La Hoz</h1>
-           <p class="profesion">Tecnico de Sistemas</p>
-           <p class="Ocupación">estudiante de programación</p>
-        </header>
+      <section class="presentación"> 
+         <h2> ¡Bienvenidos a mi espacio digital!</h2>
+
+         <p>
+            soy tecnico en sistemas, tengo experiencia en seguridad electronica y servicio al cliente.
+         </p>
+      </section>  
+
        
+      <section class="habilidades">
+         <h2>Mis areas de interes</h2>
 
-        <section class="presentación">
-            <h2>¡Bienvenido a mi espacio digital!</h2>
+         <ul>
+           <li>Desarrollo web: HTML, CSS y Javascript</li>
+           <li>Instalaciones de camaras y alarmas de Seguridad Electronica</li>
+         </ul>  
 
-          <p> 
-               Soy Tecnico en Sistemas, me caracterizo por ser ay q sueño, soy muy makia
+      </section>
 
-            <p>    
-         </section>
+      <section class="contacto">
+        <h2>Formulario de contacto</h2>
 
-        <section class="habilidades">
-           <h2>Mis cualidades</h2> 
+         <p class="texto-contacto">
+          ¿Tienes una pregunta o una propuesta?
+          Completa el siguiente formulario.
+         </p>
 
-           <ul>     
-               <li>Creativa</li>
-                <li>Responsable</li>
+      </section>
 
-        
-    
+      <form id="formularioContacto">
+        <!-- Aquí van los campos del formulario -->
+      </form>
+
+      <div class="campo">
+         <label for="nombre">Nombre completo</label>
+         <input type="text" id="nombre" name="nombre"
+         placeholder="Escribe tu nombre" required minlength="3">
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo"
+         placeholder="ejemplo@correo.com" required>
+      </div>
+
+     <div class="campo">
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto" required>
+           <option value="">Selecciona una opción</option>
+           <option value="Consulta">Consulta</option>
+           <option value="Proyecto">Propuesta de proyecto</option>
+           <option value="Formacion">Formación</option>
+           <option value="Otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+         <label for="mensajeContacto">Mensaje</label>
+         <textarea id="mensajeContacto" name="mensaje" rows="5"
+         placeholder="Escribe tu mensaje..." required minlength="10"></textarea>
+      </div>
+
+     <button type="submit" class="boton-enviar">
+        Enviar mensaje
+     </button>
+
+      <p id="respuestaFormulario"
+        class="respuesta-formulario"
+        role="status"
+        aria-live="polite"></p>
+
+      </form>
+      </section>
+
+      <button id="botonMensaje">
+         conoce mi proposito
+      </button>
+
+      <p id="mensaje" class="mensaje oculto">
+         Mi proposito es adquirir nuevas experiencias para fortalecer mis experiencias.
+      </p>
+
+      <footer>
+        <p>Mantenimineto, instalación de redes, camaras y alarmas de seguridad electronica </p>
+      </footer>
+
+      </main>
+<script scr="script.js"></script></script>  
+
 </body>
 </html>
+
+     
+     
+
+        
+
+
